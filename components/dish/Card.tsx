@@ -26,11 +26,11 @@ const Card = ({ id, name, description, price }: Props) => {
 
       <div className="basis-3/5 p-2 grid">
         <h2 className="font-semibold">{name}</h2>
-        <p className="text-xs ">{description}</p>
+        <p className="text-xs truncate">{description}</p>
         <div className="text-xs font-normal flex items-center justify-between">
           <p className="">
             {price}
-            <span>Rs</span>{" "}
+            <span>$</span>{" "}
           </p>
           <p>4.5 / 5</p>
         </div>
