@@ -25,7 +25,7 @@ const Card = ({ id, name, description, price }: Props) => {
         className="w-full h-[75%] object-cover rounded-t-xl"
       />
 
-      <div className="basis-2/5 p-3 grid">
+      <div className="basis-3/5 p-2 grid">
         <h2 className="font-semibold">{name}</h2>
         <p className="text-xs ">{description}</p>
         <div className="text-xs font-normal flex items-center justify-between">
