@@ -1,6 +1,6 @@
 "use server"
 
-import UpdateForm from "@/components/UpdateForm"
+import UpdateForm from "@/components/dish/UpdateForm"
 import { fetchDishesById } from "@/lib/actions/dish.action"
 
 

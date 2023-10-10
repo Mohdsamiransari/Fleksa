@@ -13,7 +13,7 @@ interface Params {
   path: string;
 }
 
-// create dish
+// create new dish
 export async function createDish({ name, description, price, path }: Params) {
   try {
     connectToDB();
@@ -30,6 +30,8 @@ export async function createDish({ name, description, price, path }: Params) {
   }
 }
 
+
+// fetching all the dishes
 export async function fetchDishes() {
   try {
     connectToDB();
@@ -42,6 +44,8 @@ export async function fetchDishes() {
   }
 }
 
+
+// fetching single dish by its id
 export async function fetchDishesById(dishId: String) {
   try {
     connectToDB();
@@ -56,7 +60,7 @@ export async function fetchDishesById(dishId: String) {
 interface updateDishData extends Params {
   dishId: String;
 }
-
+// update dish by its id
 export async function updateDish({
   dishId,
   name,
@@ -80,6 +84,8 @@ export async function updateDish({
   }
 }
 
+
+// delete dish
 export async function deleteDish(dishId: String, path: string) {
   try {
     connectToDB();

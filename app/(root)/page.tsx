@@ -1,5 +1,5 @@
-import Card from "@/components/Card";
-import Testimonials from "@/components/Testimonials";
+import Card from "@/components/dish/Card";
+import Testimonials from "@/components/shared/Testimonials";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { MdOutlineLocationOn } from "react-icons/md";
 
@@ -7,6 +7,7 @@ import Link from "next/link";
 import { fetchDishes } from "@/lib/actions/dish.action";
 
 export default async function Home() {
+  // getting all dishes from dish action in lib folder
   const dish = await fetchDishes();
 
   return (

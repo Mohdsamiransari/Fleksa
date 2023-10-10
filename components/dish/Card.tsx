@@ -16,7 +16,6 @@ const Card = ({ id, name, description, price }: Props) => {
   
   return (
     <div className=" h-[26rem] rounded-xl bg-white flex flex-col text-black">
-      {/* <img src={Pasta} alt="" className='w-full h-[75%] object-cover rounded-t-xl'/> */}
       <Image
         src="/assets/Pasta.jpg"
         alt="dish"
