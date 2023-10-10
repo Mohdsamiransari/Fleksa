@@ -27,7 +27,8 @@ const Card = ({ id, name, description, price }: Props) => {
 
       <div className="basis-2/5 p-3 grid">
         <h2 className="font-semibold">{name}</h2>
-        <div className="text-sm font-semibold flex items-center justify-between">
+        <p className="text-xs ">{description}</p>
+        <div className="text-xs font-normal flex items-center justify-between">
           <p className="">
             {price}
             <span>Rs</span>{" "}
